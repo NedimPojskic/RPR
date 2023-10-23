@@ -1,0 +1,1 @@
+zadatke 2 i 3 sa vjezbe 2 sam pushao sa laptopa gdje mi je na github desktop privatni git account pa zato pise NedEgg na njima
