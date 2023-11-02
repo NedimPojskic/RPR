@@ -1,4 +1,4 @@
-enum Grad {
+enum Grad { //pozivni brojevi sa BIH wikipedia stranice
     BIHAC("037"),
     ORASJE("031"),
     TUZLA("035"),
