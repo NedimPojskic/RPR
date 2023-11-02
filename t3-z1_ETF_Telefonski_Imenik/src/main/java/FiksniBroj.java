@@ -23,11 +23,15 @@ enum Grad {
 }
 public class FiksniBroj extends TelefonskiBroj {
     String broj;
-    Grad grad;
+    public Grad grad;
 
     public FiksniBroj(Grad g, String b) {
         grad = g;
         broj = b;
+    }
+
+    public Grad dajGrad() {
+        return grad;
     }
 
     @Override
