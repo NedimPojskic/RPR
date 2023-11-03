@@ -1,5 +1,12 @@
 import java.util.*;
 
+class NemaBroja extends Exception
+{
+    public NemaBroja(String e)
+    {
+        super(e);
+    }
+}
 public class Imenik {
     private HashMap<String, TelefonskiBroj> imenik = new HashMap<>();
     public void dodaj(String ime, TelefonskiBroj broj) {
@@ -9,13 +16,13 @@ public class Imenik {
         return imenik.get(ime).ispisi();
     }
 
-    public String dajIme(TelefonskiBroj broj) {
+    public String dajIme(TelefonskiBroj broj) throws NemaBroja {
         for(Map.Entry<String, TelefonskiBroj> entry : imenik.entrySet()) {
             if(entry.getValue() == broj) {
                 return entry.getKey();
             }
         }
-        return null;
+        throw new NemaBroja("Dati broj ne postoji u imeniku");
     }
 
     public String naSlovo(char s) {
