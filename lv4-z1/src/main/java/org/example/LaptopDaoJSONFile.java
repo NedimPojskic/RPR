@@ -3,13 +3,14 @@ package org.example;
 import java.io.File;
 import java.util.ArrayList;
 
+
 public class LaptopDaoJSONFile implements LaptopDao {
 
     File file;
     ArrayList<Laptop> laptopi = new ArrayList<>();
     @Override
     public void dodajLaptopUListu(Laptop laptop) {
-
+        laptopi.add(laptop);
     }
 
     @Override

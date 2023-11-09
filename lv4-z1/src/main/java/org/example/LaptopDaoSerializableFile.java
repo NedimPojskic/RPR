@@ -2,6 +2,12 @@ package org.example;
 
 import java.io.*;
 import java.util.ArrayList;
+
+class LaptopNePostoji extends Exception {
+    public LaptopNePostoji(String e) {
+        super(e);
+    }
+}
 public class LaptopDaoSerializableFile implements LaptopDao {
 
     File file;
@@ -33,13 +39,13 @@ public class LaptopDaoSerializableFile implements LaptopDao {
     }
 
     @Override
-    public Laptop getLaptop(String procesor) {
+    public Laptop getLaptop(String procesor) throws LaptopNePostoji {
         for(Laptop x : laptopi) {
             if(x.getProcesor() == procesor) {
                 return x;
             }
-        }   //ovdje treba dodati exception ako ne postoji takav laptop
-        return null;
+        }
+        throw new LaptopNePostoji("Laptop sa tim procesorom ne postoji");
     }
 
     @Override
