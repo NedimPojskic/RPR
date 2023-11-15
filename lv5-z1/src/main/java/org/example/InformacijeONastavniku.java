@@ -1,7 +1,11 @@
 package org.example;
 
-public class InformacijeONastavniku extends LicneInformacije implements Interfejs {
+import java.util.ArrayList;
+import java.util.List;
+
+public class InformacijeONastavniku extends LicneInformacije implements Interfejs,MozeOcijeniti {
     String titula;
+    List<Ocjena> ocjene = new ArrayList<>();
     public String getTitula() { return titula; }
     public void setTitula(String x) { titula = x; }
 
@@ -9,5 +13,10 @@ public class InformacijeONastavniku extends LicneInformacije implements Interfej
     @Override
     public String predstavi() {
         return ime + " " + prezime + ", titula: " + titula;
+    }
+
+    @Override
+    public Ocjena ocijeni(int x) {
+        return null;
     }
 }

@@ -1,7 +1,11 @@
 package org.example;
 
-public class Predmet  implements  Interfejs {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Predmet  implements  Interfejs,MozeOcijeniti {
     String naziv, opis;
+    List<Ocjena> ocjene = new ArrayList<>();
 
     public String getNaziv() { return naziv; }
     public String getOpis() { return opis; }
@@ -12,5 +16,10 @@ public class Predmet  implements  Interfejs {
     @Override
     public String predstavi() {
         return "Predmet: " + naziv + ", opis: " + opis;
+    }
+
+    @Override
+    public Ocjena ocijeni(int x) {
+        return null;
     }
 }
