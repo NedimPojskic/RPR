@@ -1,11 +1,11 @@
 package org.example;
-
+@SuppressWarnings("SpellCheckingInspection")
 public class Pobjednik {
     String ime, prezime;
     int brojZnakova;
     KolekcijaImena kolekcijaImena;
 
-    public Pobjednik(KolekcijaImena k) {
+    public Pobjednik(InterfaceZaKolekcijeImena k) {
         String temp = k.getNajduzeIme();
         brojZnakova = temp.length();
 

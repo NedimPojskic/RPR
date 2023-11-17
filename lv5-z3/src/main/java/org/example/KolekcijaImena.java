@@ -3,7 +3,8 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KolekcijaImena {
+@SuppressWarnings("SpellCheckingInspection")
+public class KolekcijaImena implements InterfaceZaKolekcijeImena {
     List<String> imena = new ArrayList<>();
 
     public String getNajduzeIme() {

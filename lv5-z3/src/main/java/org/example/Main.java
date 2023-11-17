@@ -3,6 +3,7 @@ package org.example;
 import java.util.Objects;
 import java.util.Scanner;
 
+@SuppressWarnings("SpellCheckingInspection") //ovo mi je novi najdrazi annotation, mrzim onaj zeleni underline
 public class Main {
     public static void main(String[] args) {
 

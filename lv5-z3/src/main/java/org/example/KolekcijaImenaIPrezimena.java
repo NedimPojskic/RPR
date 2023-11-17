@@ -2,8 +2,8 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class KolekcijaImenaIPrezimena extends KolekcijaImena {
+@SuppressWarnings("SpellCheckingInspection")
+public class KolekcijaImenaIPrezimena extends KolekcijaImena implements InterfaceZaKolekcijeImena {
 
     List<String> imena = new ArrayList<String>();
     List<String> prezimena = new ArrayList<String>();
