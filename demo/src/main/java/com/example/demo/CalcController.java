@@ -60,7 +60,7 @@ public class CalcController {
                 case "-":
                     val = val - newValue;
                     break;
-                case "x":
+                case "X":
                     val = val * newValue;
                     break;
                 case "/":
