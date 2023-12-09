@@ -2,8 +2,6 @@ package com.example.demo2;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -29,7 +27,7 @@ public class HelloController {
     @FXML
     private ListView<String> userListView;
 
-    private List<User> userList = new ArrayList<>();
+    private List<Korisnik> userList = new ArrayList<>();
 
     @FXML
     private void dodajClick(ActionEvent event) {
@@ -39,9 +37,9 @@ public class HelloController {
 
     @FXML
     private void krajClick(ActionEvent event) {
-        User newUser = new User(ime.getText(), prezime.getText(), email.getText(), username.getText(), password.getText());
+        Korisnik newUser = new Korisnik(ime.getText(), prezime.getText(), email.getText(), username.getText(), password.getText());
         userList.add(newUser);
-        userListView.getItems().add(newUser.getUsername());
+        userListView.getItems().add(newUser.getUsername().get());
         makeEditable(false);
         clearFields();
     }
