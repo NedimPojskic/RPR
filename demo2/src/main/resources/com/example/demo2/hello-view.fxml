@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="310.0" maxWidth="500.0" minHeight="310.0" minWidth="500.0" prefHeight="310.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+   <children>
+      <VBox>
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="491.0" minHeight="-Infinity" minWidth="450.0" prefHeight="233.0" prefWidth="490.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ListView fx:id="userListView" prefHeight="179.0" prefWidth="356.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="5.0" top="15.0" />
+                     </HBox.margin>
+                  </ListView>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="399.0">
+                     <children>
+                        <VBox prefHeight="208.0" prefWidth="114.0" spacing="19.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Ime:" />
+                              <Label layoutX="10.0" layoutY="10.0" text="Prezime:" />
+                              <Label layoutX="10.0" layoutY="27.0" text="E-mail:" />
+                              <Label layoutX="10.0" layoutY="44.0" text="Korisničko Ime:" />
+                              <Label fx:id="myLabel" layoutX="10.0" layoutY="61.0" text="Lozinka:" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <TextField fx:id="ime" editable="false">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="prezime" editable="false" layoutX="10.0" layoutY="10.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="email" editable="false" layoutX="10.0" layoutY="10.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="username" editable="false" layoutX="10.0" layoutY="35.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="password" editable="false" layoutX="10.0" layoutY="85.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="dodaj" mnemonicParsing="false" onAction="#dodajClick" text="Dodaj" />
+                  <Button fx:id="kraj" layoutX="425.0" layoutY="18.0" mnemonicParsing="false" onAction="#krajClick" text="Kraj" />
+              </buttons>
+            </ButtonBar>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>
