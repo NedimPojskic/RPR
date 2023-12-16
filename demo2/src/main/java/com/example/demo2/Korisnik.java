@@ -4,11 +4,11 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Korisnik {
     //String ime, prezime, email, username, password;
-    private final SimpleStringProperty ime;
-    private final SimpleStringProperty prezime;
-    private final SimpleStringProperty email;
-    private final SimpleStringProperty username;
-    private final SimpleStringProperty password;
+    private SimpleStringProperty ime;
+    private SimpleStringProperty prezime;
+    private SimpleStringProperty email;
+    private SimpleStringProperty username;
+    private SimpleStringProperty password;
 
     public Korisnik() {
         this("", "", "", "", "");
@@ -21,7 +21,32 @@ public class Korisnik {
         this.password = new SimpleStringProperty(pass);
     }
 
+    public SimpleStringProperty getIme() {return ime;}
+    public SimpleStringProperty getPrezime() {return prezime;}
+    public SimpleStringProperty getEmail() {return email;}
     public SimpleStringProperty getUsername() {
         return username;
+    }
+    public SimpleStringProperty getPassword() {return password;}
+
+
+    public void setIme(SimpleStringProperty x) {
+        ime = x;
+    }
+    public void setPrezime(SimpleStringProperty x) {
+        prezime = x;
+    }
+    public void setEmail(SimpleStringProperty x) {
+        email = x;
+    }
+    public void setUsername(SimpleStringProperty x) {
+        username = x;
+    }
+    public void setPassword(SimpleStringProperty x) {
+        password = x;
+    }
+
+    public Korisnik getKorisnik() {
+        return this;
     }
 }
